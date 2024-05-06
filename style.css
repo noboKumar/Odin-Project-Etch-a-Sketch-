@@ -70,3 +70,13 @@ body{
     color: #000;
     margin-top: 15px;
 }
+.footer-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color */
+    margin-left: 18%;
+    color: #686868bd;
+}
+
+footer{
+    margin-top: 78px;
+}
