@@ -7,8 +7,66 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: aliceblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#title{
+    margin-left: 15%;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-left: 12%;
 }
 
 .gridPixel{
     border: 1px solid rgb(233, 233, 232);
+}
+
+#slider-content {
+    position: relative;
+    width: 570px;
+    margin: 20px;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #000;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slider-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
 }

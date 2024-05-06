@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Etch A Sketch</h1>
+    <h1 id="title">Etch A Sketch</h1>
     <div class="buttons">
-        <button>grid</button>
-        <button>reset</button>
-        <button>random</button>
+        <button id="eraser-btn">Eraser</button>
+        <button id="reset-btn">Reset</button>
+        <button id="random-btn">Random</button>
+        <button id="color-btn">Color</button>
+        <input type="color" id="color-picker" value="#000000">
+
     </div>
     
     <div id="container"></div>
-    <div class="slider-content">
-        <input type="range" min="1" max="100" value="16" class="slider" id="slider">
-        <p id="slider-value">16</p>
+    <div id="slider-content">
+        <input type="range" min="16" max="100" value="16" class="slider" id="slider">
+        <p id="slider-value"></p>
     </div>
 
     <script src="script.js"></script>
